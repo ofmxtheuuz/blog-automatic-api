@@ -16,6 +16,7 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddDbContext<AplicationDbContext>(option => option.UseSqlServer("Server=(localdb)\\MSSQLLocalDB;Database=Blog"));
 builder.Services.AddTransient<IArtigoRepository, ArtigoRepository>();
 
+// SWAGGERGEN
 builder.Services.AddSwaggerGen();
 
 var app = builder.Build();
